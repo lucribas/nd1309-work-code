@@ -39,7 +39,8 @@ module.exports = {
       provider: () => new HDWalletProvider(privatekey, `https://rinkeby.infura.io/v3/${infuraKey}`),
         network_id: 4,       // rinkeby's id
         gas: 4500000,        // rinkeby has a lower block limit than mainnet
-		gasPrice: 10000000000
+		gasPrice: 10000000000,
+		from: "0x9160B7DA5aB2aD4dA63614606241bBda09d44eC0",
       // confirmations: 2,    // # of confs to wait between deployments. (default: 0)
       // timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
       // skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
