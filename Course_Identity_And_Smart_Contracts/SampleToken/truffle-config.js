@@ -23,7 +23,7 @@ const HDWalletProvider = require('truffle-hdwallet-provider');
 const infuraKey = "dd1ae394542e4e84a2c95922d1c9efc8";
 //
 // const fs = require('fs');
-const privatekey = "12cac7fdde084ca78a84f98cbca04747";
+const privatekey = "03ae71e133b09660c5d375abc8a8c0ba56122ce16c6e787a1247ac3620f4ee54";
 
 module.exports = {
 
@@ -36,11 +36,11 @@ module.exports = {
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
     rinkeby: {
-      provider: () => new HDWalletProvider(privatekey, `https://rinkeby.infura.io/v3/${infuraKey}`),
+      provider: () => new HDWalletProvider([privatekey], `https://rinkeby.infura.io/v3/${infuraKey}`),
         network_id: 4,       // rinkeby's id
         gas: 4500000,        // rinkeby has a lower block limit than mainnet
 		gasPrice: 10000000000,
-		from: "0x9160B7DA5aB2aD4dA63614606241bBda09d44eC0",
+		from: "0x0f3eE39B6acE512b1676762F612A432e9AB5752E",
       // confirmations: 2,    // # of confs to wait between deployments. (default: 0)
       // timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
       // skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
